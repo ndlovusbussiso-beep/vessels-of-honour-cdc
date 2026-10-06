@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Enrolment Application | Vessels of Honour CDC</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5effa;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 20px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #5a189a;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    h2 {
+      color: #7b2cbf;
+      margin: 30px 0 15px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .button {
+      width: 100%;
+      margin-top: 30px;
+      padding: 15px;
+      background: #7b2cbf;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #5a189a;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #5a189a;
+      text-decoration: none;
+    }
+
+    #message {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .required {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Vessels of Honour CDC</h1>
+
+  <p class="intro">
+    Online Enrolment Application
+  </p>
+
+  <form id="applicationForm">
+
+    <h2>Child's Information</h2>
+
+    <label>
+      Child's Full Name <span class="required">*</span>
+    </label>
+
+    <input
+      type="text"
+      id="child_full_name"
+      required
+    >
+
+    <label>
+      Date of Birth <span class="required">*</span>
+    </label>
+
+    <input
+      type="date"
+      id="date_of_birth"
+      required
+    >
+
+    <label>
+      Gender
+    </label>
+
+    <select id="gender">
+      <option value="">Select gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label>
+      Class Applying For
+    </label>
+
+    <input
+      type="text"
+      id="class_applying_for"
+      placeholder="e.g. Grade R"
+    >
+
+    <label>
+      Preferred Start Date
+    </
